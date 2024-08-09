@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gierke Pumps & Irrigation</title>
+    <link rel="shortcut icon" href="./assets/images/Geirkefavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav id="navBarSm" class=" sticky top-0 bg-[#1ca3ec] transition-all duration-200 z-50 w-full lg:hidden">
+        <div id="smNavOverlay" class="bg-[#00000066] fixed inset-0 z-[300] hidden"></div>
+
+        <div id="navContent" class="text-right text-[20px] p-3 flex items-center justify-between flex-wrap text-white shadow-md py-5">
+            <div id="menu-icon" class="h-[40px] w-[40px]  duration-300 transform transition-transform  ease-in-out cursor-pointer flex flex-col gap-[7px] items-center justify-center z-[500] ">
+                <span class="h-[1.5px] w-[25px] bg-white transition-all duration-500 "></span>
+                <span class="h-[1.4px] w-[25px] bg-white transition-all duration-500"></span>
+                <span class="h-[1.5px] w-[25px] bg-white transition-all duration-500 "></span>
+            </div>
+            
+            <a href="./index.html" id="nav-logoSm"><img id="navImgSm" src="./assets/images/NavLogo.svg" class="h-[38px] w-[156px] md:h-[50px] md:w-[200px]" alt="logo"></a>
+
+            <a href="#" class="hidden md:block text-[16px] text-[#1ca3ec] hover:text-white bg-[#f5f5f5] py-3 px-8 hover:bg-transparent transition-all duration-200 font-medium">CONTACT US</a>
+            
+        </div>
+        <div id="menu" class="fixed inset-0 flex flex-col justify-between overflow-hidden transition-transform duration-300 transform bg-black z-[400] -translate-x-[120%] overflow-y-scroll max-w-[450px] shadow-sm">
+            <!--  -->
+            <ul class="flex flex-col  gap-4 px-8 flex-grow text-[16px] my-4 text-[#ffffff99] pt-16 ">
+                <li class="text-white w-fit transition-all duration-200 ">
+                    <a href="./index.html">HOME</a>
+                   
+                </li>
+                <li class="hover:text-white w-fit transition-all duration-200 ">
+                    <a href="./team.html">WHY CHOOSE US?</a>
+                   
+                </li>
+                <li class=" w-fit transition-all duration-200 ">
+                    <span class="flex place-items-center gap-4 hover:text-white">
+                        <a href="#" class="">SERVICES </a>
+                    <i id="navArrowDown" class='bx bx-chevron-down text-2xl'></i>
+                    </span>
+                    <ul id="servicesDropDown" class=" mx-4 grid gap-4 h-0  overflow-hidden">
+                        <li class="hover:text-white w-fit transition-all duration-200  ">
+                    <a href="./services-residential.html">RESIDENTIAL</a>
+                    </li>
+                        <li class="hover:text-white w-fit transition-all duration-200 ">
+                    <a href="./services-farming.html">FARMING</a>
+                    </li>
+                        <li class="hover:text-white w-fit transition-all duration-200 ">
+                    <a href="./services-commercial.html">GOVERNMENT & COMMERCIAL</a>
+                    </li>
+                        <li class="hover:text-white w-fit transition-all duration-200 ">
+                    <a href="./services-industrial.html">INDUSTRIAL & MINING</a>
+                    </li>
+                    </ul>
+                    </li>
+                   
+                <li class="hover:text-white w-fit transition-all duration-200">
+                    <a href="./equipment.html">EQUIPMENT</a>
+                    </li>
+                   
+                <li class="hover:text-white w-fit transition-all duration-200 ">
+                    <a href="./contact.html">CONTACT</a>
+                   
+                </li>
+                
+               <ul class="flex flex-col  gap-4  flex-grow text-[16px]  text-white font-medium  ">
+                <li><h3 class="text-white text-[22px] font-medium my-5">Get in touch</h3></li>
+                <li class=" hover:text-[#1ca3ec] w-fit transition-all duration-200 ">
+                    <a href="tel:+07 4634 3331">07 4634 3331 (Tel) </a>
+                   
+                </li>
+                <li class="hover:text-[#1ca3ec]  w-fit transition-all duration-200 ">
+                    <a href="mailto:john@gierkepumps.com.au ">john@gierkepumps.com.au </a>
+                   
+                </li>
+             </ul>
+                
+            </ul>
+            
+             
+           <div class="flex place-content-center pb-6">
+          <a href="#" class="bg-white px-3 py-4 rounded-full  fill-[#1ca3ec] hover:fill-[#8c8c8c] transition-all duration-200">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2304 1792" class="w-[25px] svg-icon">
+    <path fill="inherit" d="M1437 913q0 208-87 370.5t-248 254-369 91.5q-149 0-285-58t-234-156-156-234-58-285 58-285 156-234 234-156 285-58q286 0 491 192l-199 191q-117-113-292-113-123 0-227.5 62t-165.5 168.5-61 232.5 61 232.5 165.5 168.5 227.5 62q83 0 152.5-23t114.5-57.5 78.5-78.5 49-83 21.5-74h-416v-252h692q12 63 12 122zM2304 791v210h-209v209h-210v-209h-209v-210h209v-209h210v209h209z"></path>
+  </svg>
+</a>
+
+           </div>
+        </div>
+    </nav>
+    <header class="bg-[#1ca3ec] hidden lg:block">
+        <div class="flex items-center justify-between flex-wrap text-white max-w-[1200px] mx-auto px-2 py-10">
+            <a href="./index.html"><img id="navImgSm" src="./assets/images/NavLogo.svg" class="h-[70px] w-[282px] hover:scale-110 transition-all duration-200" alt="logo"></a>
+            <a href="https://www.google.com/maps/place/28+Cox+St,+Wilsonton+QLD+4350,+Australia/@-27.5520772,151.9210308,17z/data=!3m1!4b1!4m6!3m5!1s0x6b965ced3477f241:0xa4104f1e99098d6e!8m2!3d-27.5520772!4d151.9210308!16s%2Fg%2F11bw4_v2gz?entry=ttu" class="pr-10 flex gap-4 items-center"> <i class='bx bxs-map text-2xl'></i> <p class="text-[16px] hover:underline font-bold">28 Cox Street Toowoomba Qld 4350 </p></a>
+        </div> 
+    </header>
+    <nav class="sticky top-0 py-3 text-[16px] text-black shadow-t shadow-b bg-white shadow-sm hidden lg:block z-[50]">
+        <ul class="flex flex-wrap items-center justify-center gap-8 mx-4 ">
+            <li class="  relative group w-fit  "><a href="./index.html">HOME</a>
+            <span class="  w-full h-[2px] bg-black absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+            <li class="h-4 w-[2px] bg-black "></li>
+            <li class="  relative group w-fit  "><a href="./team.html">WHY CHOOSE US?</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-black absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+            <li class="h-4 w-[2px] bg-black "></li>
+            <li class="  relative group w-fit  "> <span class="flex place-items-center gap-4 ">
+                        <a href="#" class="">SERVICES </a>
+                    <i  class='bx bx-chevron-down text-2xl group-hover:rotate-180 transition-all duration-300'></i>
+                    </span>
+                    
+            <span class=" w-0 group-hover:w-full h-[2px] bg-black absolute -bottom-1 left-0 transition-all duration-200"></span>
+            <ul  class=" absolute pt-2 top-[38px]  text-[#999999] text-[14px] min-w-[260px] h-0  overflow-hidden group-hover:h-auto transition-all duration-200">
+                <!--  -->
+                        <li class="hover:text-white w-full transition-all duration-200  px-3 py-4  bg-[#FAF9F9] hover:bg-[#5D665E] ">
+                    <a  href="./services-residential.html">RESIDENTIAL</a>
+                    </li>
+                        <li class="hover:text-white w-full transition-all duration-200 px-3 py-4 hover:bg-[#5D665E] bg-[#FAF9F9]">
+                    <a href="./services-farming.html">FARMING</a>
+                    </li>
+                        <li class="hover:text-white w-full transition-all duration-200 px-3 py-4 hover:bg-[#5D665E] bg-[#FAF9F9]">
+                    <a href="./services-commercial.html">GOVERNMENT & COMMERCIAL</a>
+                    </li>
+                        <li class="hover:text-white w-full transition-all duration-200 px-3 py-4 hover:bg-[#5D665E] bg-[#FAF9F9]">
+                    <a href="./services-industrial.html">INDUSTRIAL & MINING</a>
+                    </li>
+                    </ul>
+            </li>
+            <li class="h-4 w-[2px] bg-black "></li>
+            <li class="  relative group w-fit  "><a href="./equipment.html">EQUIPMENT</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-black absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+            <li class="h-4 w-[2px] bg-black "></li>
+            <li class="  relative group w-fit  "><a href="./contact.html">CONTACT</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-black absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+            
+            
+        </ul>
+    </nav>
+    <!-- end of header -->
+
+    <section class="bg-white md:bg-[#F5F5F5] md:grid md:grid-cols-2 md:py-20 md:min-h-screen">
+        <div data-aos="zoom-in"  data-aos-duration="1500" class="relative w-full h-[250px] md:h-full md:min-h-[430px] md:w-[90%] bg-cover bg-center  bg-no-repeat bg-[url('./assets/images/homeImg2.jpg')] order-1 md:order-2 md:ml-auto">
+            <div class="h-full w-full bg-[#1ca3ec] bg-opacity-70"></div>
+            <div class="absolute top-[15%] right-[10%] left-0 md:-left-[12%] md:-bottom-[12%]">
+                <img class="object-cover w-full h-[250px] md:h-full" src="./assets/images/HomeImg.png" alt="">
+            </div>
+        </div>
+        <div class="px-4 py-24 md:p-0 md:px-20 lg:px-32 lg:pr-48">
+            <h3 class="text-[36px] md:text-[40px] text-[#5D665E]" style="font-family: 'Alfa Slab One', serif">Gierke are the water specialists</h3>
+            <p class="text-[15px] md:text-[16px] leading-8 font-thin mb-8">
+                We’ve been testing, connecting and moving water since 1908. Our equipment and experience makes everything easier.
+            </p>
+            <a href="./services-residential.html" class="border-[#1ca3ec] border-2  hover:bg-[#1ca3ec] text-[#1ca3ec] py-4 px-8 md:px-4 lg:px-8 font-semibold hover:text-white transition-all duration-200 text-[16px]  ">FIND YOUR SERVICE </a>
+        </div>
+    </section>
+
+    <section class="bg-white md:bg-[#F5F5F5] p-4 md:px-16 md:py-10 2xl:py-32">
+        <div class=" max-w-[1200px] mx-auto">
+            <h4 class="text-[24px] md:text-[25px]" style="font-family: 'Alfa Slab One', serif">Find the right service for you</h4>
+        <div class="md:px-5 md:py-8 sm:grid sm:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div class="home-card bg-white ">
+                
+                    <img class="aspect-square object-cover md:aspect-[12/8] " src="./assets/images/homeCardImg1.png" alt="">
+                   <div class="px-2 py-4 text-center grid  md:px-3 md:py-4 items-center">
+                     <h5 class="text-[24px] md:text-[18px] leading-5">RESIDENTIAL</h5>
+                    <p class="text-[14px] font-light leading-5">We help you with everything from drinking water to swimming pool pumps.</p>
+                    <a href="./services-residential.html" class="block border-[#1ca3ec] border-2  hover:bg-[#1ca3ec] text-[#1ca3ec] py-3 font-semibold hover:text-white transition-all duration-200 text-[16px] my-3 sm:mx-6">
+                        FIND OUT MORE
+                    </a>
+                   </div>
+                </div>
+            <div class="home-card bg-white ">
+                
+                    <img class="aspect-square object-cover md:aspect-[12/8] " src="./assets/images/homeCardImg2.png" alt="">
+                   <div class="px-2 py-4 text-center grid  md:px-3 md:py-4  ">
+                     <h5 class="text-[24px] md:text-[18px] leading-5">FARMING</h5>
+                    <p class="text-[14px] font-light leading-5">We can set up, test and maintain your whole system.</p>
+                    <a href="./services-farming.html" class="block border-[#1ca3ec] border-2  hover:bg-[#1ca3ec] text-[#1ca3ec] py-3 font-semibold hover:text-white transition-all duration-200 text-[16px] my-3 sm:mx-6">
+                        FIND OUT MORE
+                    </a>
+                   </div>
+                </div>
+            <div class="home-card bg-white ">
+                
+                    <img class="aspect-square object-cover md:aspect-[12/8] " src="./assets/images/homeCardImg3.png" alt="">
+                   <div class="px-2 py-4 text-center grid  md:px-3 md:py-4">
+                     <h5 class="text-[24px] md:text-[18px] leading-5">GOVERNMENT & COMMERCIAL</h5>
+                    <p class="text-[14px] font-light leading-5">Whether you’re a school or a developer, we have the services you need.</p>
+                    <a href="./services-commercial.html" class="block border-[#1ca3ec] border-2  hover:bg-[#1ca3ec] text-[#1ca3ec] py-3 font-semibold hover:text-white transition-all duration-200 text-[16px] my-3 sm:mx-6">
+                        FIND OUT MORE
+                    </a>
+                   </div>
+                </div>
+            <div class="home-card bg-white ">
+                
+                    <img class="aspect-square object-cover md:aspect-[12/8] " src="./assets/images/homeCardImg4.jpg" alt="">
+                   <div class="px-2 py-4 text-center grid  md:px-3 md:py-4">
+                     <h5 class="text-[24px] md:text-[18px] leading-5">INDUSTRIAL & MINING</h5>
+                    <p class="text-[14px] font-light leading-5">Gierke provides bore testing, pump sizing, pump engineering and more.</p>
+                    <a href="./services-industrial.html" class="block border-[#1ca3ec] border-2  hover:bg-[#1ca3ec] text-[#1ca3ec] py-3 font-semibold hover:text-white transition-all duration-200 text-[16px] my-3 sm:mx-6">
+                        FIND OUT MORE
+                    </a>
+                   </div>
+                </div>
+           
+           
+           
+            
+        </div>
+        </div>
+    </section>
+
+     <section class="bg-[#F5F5F5] pt-20 md:grid md:grid-cols-2 md:py-20 md:min-h-screen">
+        <div data-aos="zoom-in-left"  data-aos-duration="1500" class="relative w-full h-[250px] md:h-full md:min-h-[430px]  bg-[#1ca3ec] md:mr-auto">
+            <div class="absolute -top-[12%] right-[8%] left-0 md:-left-[12%] md:bottom-[10%]">
+                <img class="object-cover w-full h-[250px] md:h-full" src="./assets/images/HomeImg.png" alt="">
+            </div>
+        </div>
+        <div class="p-4 md:-mt-16 md:pl-10  md:pr-12">
+            <h3 class="text-[24px] md:text-[25px] md:my-1" style="font-family: 'Alfa Slab One', serif">Call us now</h3>
+            <p class="text-[15px] md:text-[16px] leading-8 font-thin md:my-1">
+                Gierke Pumps and Irrigation has an experienced team ready to help you out. Just give us a call and we’ll find you a solution.
+            </p>
+            <a href="./contact.html" class="border-[#1ca3ec] border-2  hover:bg-[#1ca3ec] text-[#1ca3ec] py-3  font-semibold hover:text-white transition-all duration-200 text-[16px] block text-center md:max-w-[230px] md:my-4">CONTACT US </a>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+     <section class="bg-cover bg-center md:bg-fixed bg-no-repeat bg-[url('./assets/images/footerImg.png')] ">
+        <div class="bg-[#1CA3EC] bg-opacity-70 px-5 py-8 md:px-16 md:py-14 ">
+            <div class="flex flex-col items-center justify-center md:flex-row md:justify-between md:items-baseline gap-6 max-w-[1200px] mx-auto ">
+            <p class="text-[30px] text-white text-center md:text-left" style="font-family: 'Alfa Slab One', serif">Give us a call – we’re ready to help you</p>
+            <div class="text-[16px] text-[#5d665e]  hover:text-[#1CA3EC] font-medium md:mr-12">
+                <a href="./contact.html" class="whitespace-nowrap bg-white py-4 px-20 md:px-14 transition-all duration-200 ">CONTACT US</a>
+            </div>
+        </div>
+        </div>
+     </section>
+     <footer class="text-white bg-black px-4 py-11 md:py-20 md:px-12 ">
+        <div class="flex flex-col gap-10 md:flex-row flex-wrap max-w-[1200px] mx-auto">
+            <ul class="flex flex-col  gap-5  flex-grow   text-white font-semibold text-[16px] md:text-[14px] ">
+                <li><h3 class="text-white text-[17px] md:text-[18px] ">CONTACT US</h3></li>
+                <li class=" hover:text-[#1ca3ec] w-fit transition-all duration-200 ">
+                    <a href="tel:+07 4634 3331">07 4634 3331 (Tel) </a>
+                   
+                </li>
+                <li class="hover:text-[#1ca3ec]  w-fit transition-all duration-200 ">
+                    <a href="mailto:john@gierkepumps.com.au ">john@gierkepumps.com.au </a>
+                   
+                </li>
+                <li class="hover:text-[#1ca3ec]  w-fit transition-all duration-200 ">
+                    <a href="https://www.google.com/maps/place/Toowoomba+QLD,+Australia/@-27.5735902,151.9268826,12z/data=!3m1!4b1!4m6!3m5!1s0x6b9644ba48e3658f:0x400eef17f20bf50!8m2!3d-27.5598212!4d151.9506696!16zL20vMDJja203?entry=ttu ">Toowoomba City, Qld 4350 </a>
+                   
+                </li>
+             </ul>
+            
+            <ul class="flex flex-col  gap-6  flex-grow   text-white  text-[14px] ">
+                <li><h3 class="text-white text-[17px] md:text-[18px] font-semibold ">ABOUT</h3></li>
+                  <li class="  relative group w-fit  "><a href="./team.html">WHY CHOOSE US?</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-white absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+                  <li class="  relative group w-fit  "><a href="./equipment.html">EQUIPMENT</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-white absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+                  <li class="  relative group w-fit  "><a href="./contact.html">CONTACT</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-white absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+               
+             </ul>
+             <ul class="flex flex-col  gap-6  flex-grow   text-white  text-[14px] ">
+                <li><h3 class="text-white text-[17px] md:text-[18px] font-semibold ">SERVICES</h3></li>
+                  <li class="  relative group w-fit  "><a href="./services-residential.html">RESIDENTIAL</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-white absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+                  <li class="  relative group w-fit  "><a href="./services-farming.html">FARMING</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-white absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+                  <li class="  relative group w-fit  "><a href="./services-commercial.html">GOVERNMENT & COMMERCIAL</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-white absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+                  <li class="  relative group w-fit  "><a href="./services-industrial.html">INDUSTRIAL & MINING</a>
+            <span class=" w-0 group-hover:w-full h-[2px] bg-white absolute -bottom-1 left-0 transition-all duration-200"></span>
+            </li>
+               
+             </ul>
+             <div class="grid gap-3 lg:min-w-[380px]">
+                <h3 class="text-white text-[17px] md:text-[18px] font-semibold ">SUBSCRIBE TO OUR NEWSLETTER</h3>
+                <form class="grid gap-3 text-black">
+  <label class=" text-[14px] text-white" for="name" style="font-family: 'Helvetica', 'Arial', sans-serif;">Name <span class="text-red-600">*</span></label>
+  <input class=" py-[12px] px-[16px] mb-2 placeholder:text-[#757575]" type="text" id="name" name="name" placeholder="Enter your name here" required>
+
+  <label class=" text-[14px] text-white" for="email" style="font-family: 'Helvetica', 'Arial', sans-serif;">Email *</label>
+  <input  class=" py-[12px] px-[16px] mb-2 placeholder:text-[#757575]" type="email" id="email" name="email" placeholder="Enter your email here" required>
+
+  <button class="text-white w-fit texxt-[16px] font-semibold border-2 border-white px-6 py-[10px] transition-all duration-200 hover:bg-white hover:text-[#1ca3ec] my-3" type="submit" style="font-family: 'Helvetica', 'Arial', sans-serif;">Subscribe</button>
+</form>
+
+             </div>
+            
+        </div>
+
+        <hr class="my-4 md:my-20">
+        <div class="text-white text-[12px] md:text-[14px] grid gap-4 md:grid-cols-3 md:gap-1 md:justify-between max-w-[1200px] mx-auto ">
+            <div class=" flex place-content-center md:justify-start">
+                <a href="./index.html"><img class="w-[275px] h-[68px] md:w-[182px] md:h-[55px] md:hover:scale-110 transition-all duration-200" src="./assets/images/FooterLogo.svg" alt=""></a>
+            </div>
+            <ul class="grid justify-center text-center gap-4 ">
+                <li class="hover:underline transition-all duration-200"><a href="./index.html">Gierke Pumps & Irrigation </a></li>
+                <li class="hover:underline transition-all duration-200"><a href="#">Privacy Policy  </a></li>
+                <li class="hover:underline transition-all duration-200"><a href="#">Website by Indigo Web  </a></li>
+                <li class=" text-[13px] md:text-[12px]">&copy; 2024 All Rights Reserved</li>
+            </ul>
+             <div class="flex place-content-center md:items-start ">
+          <a href="#" class="bg-white px-3 py-4 rounded-full  fill-[#1ca3ec] hover:fill-[#8c8c8c] transition-all duration-200">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2304 1792" class="w-[25px] svg-icon">
+    <path fill="inherit" d="M1437 913q0 208-87 370.5t-248 254-369 91.5q-149 0-285-58t-234-156-156-234-58-285 58-285 156-234 234-156 285-58q286 0 491 192l-199 191q-117-113-292-113-123 0-227.5 62t-165.5 168.5-61 232.5 61 232.5 165.5 168.5 227.5 62q83 0 152.5-23t114.5-57.5 78.5-78.5 49-83 21.5-74h-416v-252h692q12 63 12 122zM2304 791v210h-209v209h-210v-209h-209v-210h209v-209h210v209h209z"></path>
+  </svg>
+</a>
+
+           </div>
+        </div>
+     </footer>
+ <span id="backToTopBtn" class="bg-[#04040468]  px-1 border border-white inline-flex cursor-pointer fixed bottom-4 right-4 hidden">
+  <a href="#"><img src="./assets/images/faq-icon.svg" class="w-4 rotate-180" alt="Back to top"></a>
+</span>
+    <!-- js -->
+     <script src="./app.js"></script>
+     <script>document.addEventListener('DOMContentLoaded', () => {
+  const backToTopBtn = document.getElementById('backToTopBtn')
+
+  const toggleBackToTopBtn = () => {
+    const scrollPosition = window.scrollY + window.innerHeight
+    const documentHeight = document.documentElement.scrollHeight
+    const threshold = documentHeight - 1000 
+
+    if (window.innerWidth < 768) {
+      // Show on smaller screens if near bottom
+      if (scrollPosition >= threshold) {
+        backToTopBtn.classList.remove('hidden')
+      } else {
+        backToTopBtn.classList.add('hidden')
+      }
+    } else {
+      // Hide on larger screens by default
+      backToTopBtn.classList.add('hidden')
+    }
+  }
+
+  const scrollToTop = (event) => {
+    event.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  window.addEventListener('scroll', toggleBackToTopBtn)
+  window.addEventListener('resize', toggleBackToTopBtn)
+  backToTopBtn.addEventListener('click', scrollToTop)
+
+  // Initial check in case the page is loaded near the bottom
+  toggleBackToTopBtn()
+})</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

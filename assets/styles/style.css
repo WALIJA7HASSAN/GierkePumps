@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: "Ubuntu", sans-serif;
+    
+}
+.team-content,.team-content2,.team-content3{
+    padding-inline: 1rem;
+    padding-block: 1rem 3rem;
+}
+.team-content h4,.team-content2 h4,.team-content3 h4,.services-content h4{
+    font-family: 'Alfa Slab One', serif;
+    font-size: 36px;
+    color: #5D665E;
+}
+.team-content p,.team-content2 p,.team-content3 p,.team-content3 ul,.services-content p,.services-content ul{
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 2rem;
+}
+.team-content3 strong{
+    font-size: 15px;
+    line-height: 3rem;
+}
+.team-content3 ul,.services-content ul{
+    padding-left: 2rem;
+    list-style: disc;
+    margin-bottom: 0.5rem;
+}
+
+.faq ul{
+    padding-inline: 2.5rem;
+     line-height: 2rem;
+     list-style: disc;
+}
+.faq{
+    max-height: 0;
+    overflow: hidden;
+    padding:  0 1rem;
+    border: none;
+    line-height: 2rem;
+    transition: max-height 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+.open{
+    border-bottom: 1px solid  #d7d6d6;
+    max-height: 1000px;
+}
+@media screen and (min-width:640px){
+    .home-card{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+   
+}
+@media screen and (min-width:768px){
+    
+    .team-content ,.team-content2,.team-content3{
+        padding-inline: 3rem 2rem;
+        padding-block: 0;
+    }
+    .team-content2{
+        margin-top: -2rem;
+    }
+    .team-content h4,.services-content h4{
+            font-size: 40px;
+
+    }
+    .team-content2 h4,.team-content3 h4{
+        font-size: 30px;
+    }
+    .team-content p,.team-content2 p,.team-content3 p,.services-content p{
+            font-size: 16px;
+
+    }
+    .team-content3 strong{
+    font-size: 16px;
+}
+.services-content h4{
+    line-height: 4rem;
+}
+
+
+}
