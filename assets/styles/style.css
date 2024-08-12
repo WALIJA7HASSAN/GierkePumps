@@ -47,6 +47,21 @@
     border-bottom: 1px solid  #d7d6d6;
     max-height: 1000px;
 }
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-in{
+     animation: zoomIn 1s ease-in-out;
+}
+
 @media screen and (min-width:640px){
     .home-card{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -54,6 +69,9 @@
    
 }
 @media screen and (min-width:768px){
+    .hero-img{
+          animation: zoomIn 1.5s ease-in-out;
+    }
     
     .team-content ,.team-content2,.team-content3{
         padding-inline: 3rem 2rem;

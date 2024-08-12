@@ -27,7 +27,7 @@
             <a href="#" class="hidden md:block text-[16px] text-[#1ca3ec] hover:text-white bg-[#f5f5f5] py-3 px-8 hover:bg-transparent transition-all duration-200 font-medium">CONTACT US</a>
             
         </div>
-        <div id="menu" class="fixed inset-0 flex flex-col justify-between overflow-hidden transition-transform duration-300 transform bg-black z-[400] -translate-x-[120%] overflow-y-scroll max-w-[450px] shadow-sm max-h-screen">
+        <div id="menu" class="fixed inset-0 flex flex-col justify-between overflow-hidden transition-transform duration-300 transform bg-black z-[400] -translate-x-[120%] overflow-y-scroll max-w-[450px] shadow-sm ">
             <!--  -->
             <ul class="flex flex-col  gap-4 px-8  text-[16px] my-4 text-[#ffffff99] pt-16 ">
                 <li class="hover:text-white w-fit transition-all duration-200 ">
@@ -173,7 +173,7 @@
          </section>
 
          <section class="bg-[#F5F5F5] pt-20 md:grid md:grid-cols-2 md:py-20 md:min-h-screen">
-        <div data-aos="zoom-in-left"  data-aos-duration="1500" class="relative w-full h-[250px] md:h-full md:min-h-[430px]  bg-[#d5d5d5] md:mr-auto">
+        <div id="team-anim" class="relative w-full h-[250px] md:h-full md:min-h-[430px]  bg-[#d5d5d5] md:mr-auto">
             <div class="absolute -top-[12%] right-[8%] left-0 md:-left-[12%] md:bottom-[10%]">
                 <img class="object-cover w-full h-[250px] md:h-full" src="./assets/images/HomeImg.png" alt="">
             </div>
@@ -279,10 +279,10 @@
                 <h3 class="text-white text-[17px] md:text-[18px] font-semibold ">SUBSCRIBE TO OUR NEWSLETTER</h3>
                 <form class="grid gap-3 text-black">
   <label class=" text-[14px] text-white" for="name" style="font-family: 'Helvetica', 'Arial', sans-serif;">Name <span class="text-red-600">*</span></label>
-  <input class=" py-[12px] px-[16px] mb-2 placeholder:text-[#757575]" type="text" id="name" name="name" placeholder="Enter your name here" required>
+  <input class="w-full py-[12px] px-[16px] mb-2 placeholder:text-[#757575]" type="text" id="name" name="name" placeholder="Enter your name here" required>
 
   <label class=" text-[14px] text-white" for="email" style="font-family: 'Helvetica', 'Arial', sans-serif;">Email *</label>
-  <input  class=" py-[12px] px-[16px] mb-2 placeholder:text-[#757575]" type="email" id="email" name="email" placeholder="Enter your email here" required>
+  <input  class="w-full py-[12px] px-[16px] mb-2 placeholder:text-[#757575]" type="email" id="email" name="email" placeholder="Enter your email here" required>
 
   <button class="text-white w-fit texxt-[16px] font-semibold border-2 border-white px-6 py-[10px] transition-all duration-200 hover:bg-white hover:text-[#1ca3ec] my-3" type="submit" style="font-family: 'Helvetica', 'Arial', sans-serif;">Subscribe</button>
 </form>
@@ -350,6 +350,32 @@
   // Initial check in case the page is loaded near the bottom
   toggleBackToTopBtn()
 })</script>
+<script>
+// Function to add or remove class based on element visibility
+function handleScroll() {
+  const element = document.querySelector('#team-anim'); // Change this selector to target your element
+
+  if (!element) return; // Exit if the element is not found
+
+  const rect = element.getBoundingClientRect();
+  const viewportHeight = window.innerHeight;
+
+  // Check if the element is within the viewport
+  if (rect.top < viewportHeight && rect.bottom > 0) {
+    element.classList.add('zoom-in'); // Add your class when the element is visible
+  } else {
+    element.classList.remove('zoom-in'); // Remove your class when the element is not visible
+  }
+}
+
+// Add the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+// Also handle the case when the page is loaded and scrolled down already
+window.addEventListener('load', handleScroll);
+
+
+</script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
